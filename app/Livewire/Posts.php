@@ -27,7 +27,11 @@ class Posts extends Component
         $this->isClose = false;
     }
 
-    
+    public function resetInputFields(){
+        $this->title = '';
+        $this->body = '';
+        $this->post_id = '';
+    }
 
 
 
