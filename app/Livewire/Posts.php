@@ -40,6 +40,11 @@ class Posts extends Component
 
         ]);
 
+        Post::updateOrCreate(['id'=>$this->post_id],
+        [
+            'title'=>$this->title,
+            'body'=>$this->body
+        ]);
         
     }
 
