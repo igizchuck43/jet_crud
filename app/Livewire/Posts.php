@@ -33,6 +33,16 @@ class Posts extends Component
         $this->post_id = '';
     }
 
+    public function store(){
+        $this->validate([
+            'title'=> 'required',
+            'body'=> 'required'
+
+        ]);
+
+        
+    }
+
 
 
 }
