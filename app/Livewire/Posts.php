@@ -45,7 +45,14 @@ class Posts extends Component
             'title'=>$this->title,
             'body'=>$this->body
         ]);
-        
+
+        session()->flash('message',
+        $this->post_id? 'Post Updated Successfully': 'Post Created Successfully');
+
+        $this->closeModal();
+        $this->resetInputFields();
+
+
     }
 
 
